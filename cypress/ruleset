@@ -28,14 +28,14 @@
    
   },
   "WHEN": {
-    "#pressed": "%o.click()",
-    "#selected *": "%o.select(%s)",
-    "*": "%o.IS(%s)",
-    "#typed *": "%o.type(%s)",
     "#cleared": "%o.clear()",
     "#focused": "%o.should('not.exist')",
+    "#pressed": "%o.click()",
     "#scrollIntoView": "%o.scrollIntoView()",
     "#screenshot": "%o.screenshot()"
+    "#selected *": "%o.select(%s)",
+    "#typed *": "%o.type(%s)",
+    "*": "%o.IS(%s)",
   },
   "THEN": {
     "#present": "%o.should('be.visible')",
