@@ -29,7 +29,7 @@
   },
   "WHEN": {
     "#cleared": "%o.clear()",
-    "#focused": "%o.should('not.exist')",
+    "#focused": "%o.focus()",
     "#pressed": "%o.click()",
     "#scrollIntoView": "%o.scrollIntoView()",
     "#screenshot": "%o.screenshot()"
