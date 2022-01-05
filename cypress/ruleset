@@ -56,6 +56,8 @@
     "#undefined-placeholder": "%o.should('not.have.attr', 'placeholder')",
     "#defined-placeholder": "%o.should('have.attr', 'placeholder')",
     "#tooltip *": "%o.invoke('attr', 'title').should('eq', %s)",
+    "#undefined-tooltip": "%o.should('not.have.attr', 'title')",
+    "#defined-tooltip": "%o.should('have.attr', 'title')",
     "#contain *": "%o.should('contain', %s)",
     "#include *": "%o.should('include', %s)",
     "#value *": "%o.should('have.value', %s)",
@@ -63,4 +65,4 @@
     "#eq *": "%o.should('eq', %s)",
     "*": "%o.SHOULD_BE(%s)"
   }
-}
+  }
