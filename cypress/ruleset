@@ -32,10 +32,10 @@
     "#focused": "%o.focus()",
     "#pressed": "%o.click()",
     "#scrollIntoView": "%o.scrollIntoView()",
-    "#screenshot": "%o.screenshot()"
+    "#screenshot": "%o.screenshot()",
     "#selected *": "%o.select(%s)",
     "#typed *": "%o.type(%s)",
-    "*": "%o.IS(%s)",
+    "*": "%o.IS(%s)"
   },
   "THEN": {
     "#present": "%o.should('be.visible')",
