@@ -12,7 +12,8 @@
     "SHOULD_BE": {
       "input": "expect(%e).to.have.value(%s)",
       "*": "expect(%e).to.have.text(%s)"
-    }
+    },
+    "IF_IS": {}
   },
   "objects": {
     "#URL": {
@@ -66,5 +67,10 @@
     "#defined-tooltip": "%o.should('have.attr', 'title')",
     "#value *": "%o.should('have.value', %s)",
     "*": "%o.SHOULD_BE(%s)"
+  },
+  "IF": {
+    "#present": "%o.should(() => { /* avoid default existence check */ })\n.IF($o => $o.length > 0, () => {\n%b\n    })",
+    "#non-present": "%o.should(() => { /* avoid default existence check */ })\n.IF($o => $o.length == 0, () => {\n%b\n    })",
+    "*": "%o.IF($o => IS($o, %s), () => {\n%b\n    })"
   }
   }
