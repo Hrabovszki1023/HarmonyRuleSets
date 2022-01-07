@@ -18,7 +18,9 @@
     "#URL": {
       "WHEN": {
         "*": "cy.visit(%s)"
-      }
+      },
+      "THEN":{
+      "*": "cy.url().should('include', %s)"}
     },
     "*": "cy.OBJ(%s)",
     "css:*": "cy.get(%s)",
