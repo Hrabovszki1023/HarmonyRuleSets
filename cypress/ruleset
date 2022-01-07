@@ -44,7 +44,7 @@
     "#non-active": "%o.should('be.disabled')",
     "#caption *": "%o.should('attr.text', %s)",
     "#contain *": "%o.should('contain', %s)",
-    "#present": "%o.should('be.visible')",
+    "#present": "%o.should('exist')",
     "#eq *": "%o.should('eq', %s)",
     "#focused": "%o.should('have.focus')",
     "#non-focused": "%o.should('not.have.focus')",
