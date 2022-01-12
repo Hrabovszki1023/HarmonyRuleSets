@@ -66,6 +66,8 @@
     "#undefined-tooltip": "%o.should('not.have.attr', 'title')",
     "#defined-tooltip": "%o.should('have.attr', 'title')",
     "#value *": "%o.should('have.value', %s)",
+    "#checked": "%o.should('be.checked')",
+    "#unchecked": "%o.should('not.be.checked')",
     "*": "%o.SHOULD_BE(%s)"
   },
   "IF": {
