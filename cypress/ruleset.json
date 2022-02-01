@@ -26,8 +26,8 @@
     },
     "*": "cy.OBJ(%s)",
     "css:*": "cy.get(%s)",
-    "id:*": "cy.get(%s)",
-    "class:*": "cy.get(%s)",
+    "id:*": "cy.get('#'+%s)",
+    "class:*": "cy.get('.'+%s)",
     "contains:*": "cy.contains(%s)"
   },
   "WHEN": {
