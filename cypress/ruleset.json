@@ -34,6 +34,7 @@
     "#cleared": "%o.clear()",
     "#focused": "%o.focus()",
     "#pressed": "%o.click()",
+    "#forcePressed": "%o.click({ force: true })",
     "#scrollIntoView": "%o.scrollIntoView()",
     "#screenshot": "%o.screenshot()",
     "#selected *": "%o.select(%s)",
