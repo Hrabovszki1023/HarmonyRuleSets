@@ -44,6 +44,7 @@
   "THEN": {
     "#active": "%o.should('not.be.disabled')",
     "#non-active": "%o.should('be.disabled')",
+    "#disabled": "%o.should('have.attr', 'disabled')",
     "#caption *": "%o.should('attr.text', %s)",
     "#contain *": "%o.should('contain', %s)",
     "#present": "%o.should('exist')",
